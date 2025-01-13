@@ -437,7 +437,7 @@ namespace GLTFast.Materials
 
             if (texCoord != 0)
             {
-                if (uvChannelPropertyId >= 0 && texCoord < 2f)
+                if (uvChannelPropertyId >= 0 && texCoord < 4f)
                 {
                     material.EnableKeyword(UVChannelSelectKeyword);
                     material.SetFloat(uvChannelPropertyId, texCoord);
